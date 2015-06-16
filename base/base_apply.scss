@@ -22,10 +22,13 @@ li
     clear: $baseClear;
     box-sizing: $baseboxSizing;
     vertical-align: $baseVerticalAlign;
+    border: $baseBoder;
 }
 body
 {
     font-size: $baseFontSize;
     font-style: $baseFontWeight;
     font-family: $baseFontFamily;
+    width: $baseBodyWidth;
+    height: $baseBodyHeight;
 }

@@ -18,12 +18,15 @@ li {
   padding: 0;
   clear: both;
   box-sizing: border-box;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  border: 0; }
 
-/* line 26, base_apply.scss */
+/* line 27, base_apply.scss */
 body {
   font-size: 14px;
   font-style: normal;
-  font-family: "微软雅黑", Helvetica, sans-serif; }
+  font-family: "微软雅黑", Helvetica, sans-serif;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=base_apply.css.map */
