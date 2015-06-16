@@ -1,0 +1,39 @@
+@charset "UTF-8";
+////
+/// Description组件公共属性和方法
+/// @group components.component_common
+/// @author wangweihui
+///
+/// 
+/// 
+/// 
+
+///内容颜色,默认为白色 #fff
+///@type Uint
+$compCommonColor: #fff;
+///设置外边距，默认都为0
+
+///@parameter compCommonMarginsParam  按顺时针四个外边距的值   类型：map  默认值：(top:0,right:0,bottom:0,left:0)
+///@example comp_common_margins();默认，即外边距都为0
+///@example comp_common_margins((top: 10px,right: 10px,bottom: 20px,left: 5px));四个外边距都进行数值设置
+///@example comp_common_margins((top: 10px,bottom: 20px,left: 5px));只设置其中几个外边距，其余未设置默认为0
+@mixin comp_common_margins($compCommonMarginsParam:(top: 0,right: 0,bottom: 0,left: 0))
+{
+    @each $marginPosition,$marginValue in $compCommonMarginsParam
+    {
+        margin-#{$marginPosition}: $marginValue;
+    }
+}
+///设置内边距，默认都为0
+///@parameter $compCommonPaddingsParam 按顺时针四个内边距的值 类型：map  默认值：(top:0,right:0,bottom:0,left:0)
+///@example comp_common_paddings();默认，即内边距都为0
+///@example comp_common_paddings((top: 10px,right: 10px,bottom: 20px,left: 5px));四个内边距都进行数值设置
+///@example comp_common_paddings((top: 10px,bottom: 20px,left: 5px));只设置其中几个内边距，其余未设置默认为0
+@mixin comp_common_paddings($compCommonPaddingsParam:(top: 0,right: 0,bottom: 0,left: 0))
+{
+    @each $paddingPosition,$paddingValue in $compCommonPaddingsParam
+    {
+        margin-#{$paddingPosition}: $paddingValue;
+    }
+}
+

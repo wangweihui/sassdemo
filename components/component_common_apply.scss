@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "component_common.scss";
+/*默认四个内外边距为0*/
+.component_common
+{
+    @include comp_common_margins();
+    @include comp_common_paddings();
+    
+    color: $compCommonColor;
+}

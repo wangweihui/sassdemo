@@ -1,11 +1,8 @@
 @charset "UTF-8";
 @import "component_titlepanel.scss";
-/*默认四个内外边距为0*/
+/*默认高度为500px*/
 .panelDefault
 {
-    @include comp_panel_margins();
-    @include com_panel_paddings();
-    
-    color: $compPanelColor;
+    height: $compPanelHeight;
 }
 

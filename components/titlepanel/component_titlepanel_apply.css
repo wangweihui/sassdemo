@@ -1,15 +1,6 @@
 @charset "UTF-8";
-/*默认四个内外边距为0*/
-/* line 4, component_titlepanel_apply.scss */
+/*默认高度为500px*/
 .panelDefault {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  color: #fff; }
+  height: 500px; }
 
 /*# sourceMappingURL=component_titlepanel_apply.css.map */
