@@ -1,13 +1,29 @@
 @charset "UTF-8";
 @import '_base';
+//@import '../themes/_theme_default.scss';
 
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+strong,
+ol,
+ul,
+li 
+{
+    margin: $baseMargin;
+    padding: $basePadding;
+    clear: $clear;
+}
 body
 {
     font-size: $baseFontSize;
     font-style: $baseFontWeight;
     font-family: $baseFontFamily;
-    margin: $baseMargin;
-    padding: $basePadding;
-    clear: $clear;
-    color: $baseFontColor;
 }

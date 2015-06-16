@@ -1,12 +1,27 @@
 @charset "UTF-8";
-/* line 4, base_apply.scss */
+/* line 5, base_apply.scss */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+strong,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  clear: both; }
+
+/* line 24, base_apply.scss */
 body {
   font-size: 14px;
   font-style: normal;
-  font-family: "微软雅黑", Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  clear: both;
-  color: #808080; }
+  font-family: "微软雅黑", Helvetica, sans-serif; }
 
 /*# sourceMappingURL=base_apply.css.map */
