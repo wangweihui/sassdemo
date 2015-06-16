@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import '_base';
+
+body
+{
+    font-size: $baseFontSize;
+    font-style: $baseFontWeight;
+    font-family: $baseFontFamily;
+    margin: $baseMargin;
+    padding: $basePadding;
+    clear: $clear;
+    color: $baseFontColor;
+}
