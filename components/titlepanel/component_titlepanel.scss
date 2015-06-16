@@ -1,0 +1,33 @@
+@charset "UTF-8";
+////
+/// Description主标题和副标题的panel
+/// @group components.titlepanel
+/// @author wangweihui
+///
+/// 
+/// 
+/// 
+
+
+///panel高度,默认为500px
+$compPanelHeight: 500px;
+
+///内容颜色,默认为白色 #fff
+$compPanelColor: #fff;
+///设置外边距
+///
+@mixin comp_panel_margins($compPanelMarginsParam:(top: 0,right: 0,bottom: 0,left: 0))
+{
+    @each $marginPosition,$marginValue in $compPanelMarginsParam
+    {
+        margin-#{$marginPosition}: $marginValue;
+    }
+}
+@mixin com_panel_paddings($compPanelPaddingsParam:(top,0)(right,0)(bottom,0)(left,0))
+{
+    @each $paddingPosition,$paddingValue in $compPanelPaddingsParam
+    {
+        margin-#{$paddingPosition}: $paddingValue;
+    }
+}
+

@@ -1,0 +1,44 @@
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group components.titlepanel
+/// @author wangweihui
+////
+
+/// This item will have:
+/// `@group API` and `@author Hugo Giraudel`
+/// inherited from the poster.
+@mixin comp_panel_margins($compPanelMarginsParam:(top,0)(right,0)(bottom,0)(left,0))
+  // ...
+}
+
+/// This item overrides the `@author` annotation
+/// from the poster; it's not merged with it.
+/// @author Fabrice Weinberg
+@mixin dummy-mixin11 {
+  // ...
+}
+
+/*---------------------margin padding parts start----------------------*/
+/*默认四个内外边距为0*/
+/*.panelDefault
+{
+    @include comp_panel_margins();
+    @include com_panel_paddings();
+    //改变内容颜色，只需给$compPanelColor赋值
+    color: $compPanelColor;
+    
+}*/
+/*四个内外边距都进行设置*/
+/*.panel
+{
+    @include comp_panel_margins((top: 10px,right: 10px,bottom: 20px,left: 5px));
+    @include com_panel_paddings((top: 10px,right: 10px,bottom: 20px,left: 5px));
+}*/
+/*只设置其中部分内外边距*/
+/*.panelPartMargin
+{
+    @include comp_panel_margins((top: 10px,bottom: 20px,left: 5px));
+    @include com_panel_paddings((top: 10px,right: 10px));
+}*/
+/*---------------------margin padding parts end----------------------*/

@@ -1,39 +1,35 @@
-@charset "UTF-8";
-/* line 5, base/base_apply.scss */
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-p,
-img,
-strong,
-ol,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  clear: both;
-  box-sizing: border-box;
-  vertical-align: bottom;
-  border: 0; }
+/*
+Error: Invalid GBK character "\xE4"
+        on line 4 of G:\learning\git\sassdemo\main.scss
 
-/* line 27, base/base_apply.scss */
-body {
-  font-size: 14px;
-  font-style: normal;
-  font-family: "微软雅黑", Helvetica, sans-serif;
-  width: 100%;
-  height: 100%; }
+1: @import "base/base_apply.scss";
+2: @import "themes/theme_default_apply.scss";
+3: /*
+4: 主应用测试文件
+5: 
+6: *\/
 
-/*重新给变量赋值，即可覆盖默认值*/
-/*$defaultBackgroundColor: #0ff;*/
-/* line 7, themes/theme_default_apply.scss */
-body {
-  color: #808080;
-  background-color: #fff; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+G:\learning\git\sassdemo\main.scss:4
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE4\"\A         on line 4 of G:\learning\git\sassdemo\main.scss\A \A 1: @import \"base/base_apply.scss\";\A 2: @import \"themes/theme_default_apply.scss\";\A 3: /*\A 4: 主应用测试文件\A 5: \A 6: */"; }
