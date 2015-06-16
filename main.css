@@ -1,5 +1,34 @@
-/* line 2, main.scss */
+@charset "UTF-8";
+/* line 5, base/base_apply.scss */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+strong,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+  vertical-align: bottom; }
+
+/* line 26, base/base_apply.scss */
 body {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "微软雅黑", Helvetica, sans-serif; }
+
+/* line 4, themes/theme_default_apply.scss */
+body {
+  color: #808080;
   background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,9 +16,11 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  clear: both; }
+  clear: both;
+  box-sizing: border-box;
+  vertical-align: bottom; }
 
-/* line 24, base_apply.scss */
+/* line 26, base_apply.scss */
 body {
   font-size: 14px;
   font-style: normal;

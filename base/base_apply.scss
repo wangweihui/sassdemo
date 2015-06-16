@@ -19,7 +19,9 @@ li
 {
     margin: $baseMargin;
     padding: $basePadding;
-    clear: $clear;
+    clear: $baseClear;
+    box-sizing: $baseboxSizing;
+    vertical-align: $baseVerticalAlign;
 }
 body
 {
