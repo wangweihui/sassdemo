@@ -31,7 +31,7 @@ $compPanelColor: #fff;
     }
 }
 ///设置内边距，默认都为0
-///@parameter (top:0,right:0,bottom:0,left:0) 按顺时针四个内边距的值
+///@parameter $compPanelPaddingsParam 按顺时针四个内边距的值 类型：map  默认值：(top:0,right:0,bottom:0,left:0)
 ///@example com_panel_paddings();默认，即内边距都为0
 ///@example com_panel_paddings((top: 10px,right: 10px,bottom: 20px,left: 5px));四个内边距都进行数值设置
 ///@example com_panel_paddings((top: 10px,bottom: 20px,left: 5px));只设置其中几个内边距，其余未设置默认为0
