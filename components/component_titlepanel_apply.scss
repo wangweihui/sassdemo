@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "_component_titlepanel.scss";
+
+/**默认四个外边距为auto*/
+.panelAutoMargin
+{
+    @include comp_panel_margins();
+}
+.panel
+{
+    @include comp_panel_margins((top: 10px,right: 10px,bottom:20px,left:5px));
+}
+

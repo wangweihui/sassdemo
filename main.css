@@ -29,7 +29,9 @@ body {
   width: 100%;
   height: 100%; }
 
-/* line 4, themes/theme_default_apply.scss */
+/*重新给变量赋值，即可覆盖默认值*/
+/*$defaultBackgroundColor: #0ff;*/
+/* line 7, themes/theme_default_apply.scss */
 body {
   color: #808080;
   background-color: #fff; }
