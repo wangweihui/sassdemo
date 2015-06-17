@@ -11,5 +11,18 @@
   padding-bottom: 0;
   padding-left: 0;
   color: #fff; }
+  /* line 54, component_common.scss */
+  .component_common .panel_1 {
+    background: rgba(3, 54, 97, 0.65); }
+  /* line 54, component_common.scss */
+  .component_common .panel_2 {
+    background: rgba(0, 0, 0, 0.6); }
+  /* line 69, component_common.scss */
+  .component_common .text {
+    font-size: 14px;
+    margin: 19px 6px; }
+  /* line 91, component_common.scss */
+  .component_common table tr {
+    height: 40px; }
 
 /*# sourceMappingURL=component_common_apply.css.map */

@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";;;AAGA,aACA;EACI,MAAM,ECUQ,KAAK",
+"mappings": ";;;AAGA,aACA;EACI,MAAM,ECOQ,KAAK",
 "sources": ["component_titlepanel_apply.scss","component_titlepanel.scss"],
 "names": [],
 "file": "component_titlepanel_apply.css"

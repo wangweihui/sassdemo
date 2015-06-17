@@ -36,4 +36,65 @@ $compCommonColor: #fff;
     }
 }
 
+///
+///给选择器设置N个属性值，length($compCommonParam) >1 
+///@parameter $preselector CSS选择器前缀，最终生成选择器+index索引的选择器
+///@parameter $compCommonParam list&lt;map&lt;string,string&gt;&gt;格式的列表
+///@example @include comp_common_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));给.panel_1,.panel_2设置背景颜色
+///
+@mixin comp_common_list($preselector,$compCommonParam)
+{
+    $num: length($compCommonParam);
+    @for $index from 1 through $num
+    {
+        $cssObj: nth($compCommonParam,$index);
+        
+        @each $cssAttr,$cssValue in $cssObj
+        {
+            #{$preselector}#{$index}
+            {
+                #{$cssAttr}:$cssValue;
+            }
+        }
+    }
+}
+///
+///给选择器设置N个属性值
+///@parameter $selector CSS选择器，
+///@parameter $compCommonParam list&lt;map&lt;string,string&gt;&gt;格式的列表
+///@example @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
+///
+@mixin comp_common_Maps($selector,$compCommonParam)
+{
+     #{$selector}
+     {
+        $num: length($compCommonParam);
+        @for $index from 1 through $num
+        {
+            $cssObj: nth($compCommonParam,$index);
+        
+            @each $cssAttr,$cssValue in $cssObj
+            {
+                  #{$cssAttr}:$cssValue;
+            }
+        }
+    }
+}
+///
+///给选择器设置单个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
+///@parameter $selector CSS选择器，
+///@parameter $attrMap map&lt;string,string&gt;格式的map
+///@example @include comp_common_MapAttr("table tr",(height: 40px));
+///
+@mixin comp_common_MapAttr($selector,$attrMap)
+{
+    #{$selector}
+    {
+         @each $cssAttr,$cssValue in $attrMap
+        {
+                #{$cssAttr}:$cssValue;
+        }
+    }
+}
+
 

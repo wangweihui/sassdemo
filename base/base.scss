@@ -34,19 +34,3 @@ $baseBoder: 0;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-@mixin comp_common_list($preselector,$compCommonParam)
-{
-    $num: length($compCommonParam);
-    @for $index from 1 through $num
-    {
-        $cssObj: nth($compCommonParam,$index);
-        
-        @each $cssAttr,$cssValue in $cssObj
-        {
-            #{$preselector}#{$index}
-            {
-                #{$cssAttr}:$cssValue;
-            }
-        }
-    }
-}

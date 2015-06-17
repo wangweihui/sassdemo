@@ -6,13 +6,31 @@
 /// @author wangweihui
 ///
 /// 
-/// 
-/// 
-
 
 ///panel高度,默认为500px
 ///@type Number
 ///
-$compPanelHeight: 500px;
+$compPanelHeight: 510px;
+///panel内容颜色,默认为白色#fff
+///@type uint
+///
+$compPanelColor: #fff;
+///panel最大宽度,默认为360px
+///@type Number
+///
+$compPanelMax-width: 360px;
+///panel布局,默认为relative
+///@type string
+///
+$compPanelPosition: relative;
 
+///panel外边距,默认为(top: 50px,right: auto,left: auto)
+///@type string
+///
+$compPanelMargins:(top: 50px,right: auto,left: auto);
+
+///panel内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
+///@type string
+///
+$compPanelPaddings:(top: 0,right: 10px,bottom: 0,left: 10px);
 

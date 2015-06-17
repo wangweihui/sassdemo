@@ -7,4 +7,7 @@
     @include comp_common_paddings();
     
     color: $compCommonColor;
+    @include comp_common_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));
+    @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
+    @include comp_common_MapAttr("table tr",(height: 40px));
 }
