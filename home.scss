@@ -1,16 +1,36 @@
 @charset "UTF-8";
-@import "../component_common.scss";
+@import "base/base_apply.scss";
+@import "components/component_common.scss";
+@import "components/titlepanel/component_titlepanel_apply.scss";
 
-.home .panel {
-    height: 510px;
-    color: #fff;
-    max-width: 360px;
-    //margin-left: auto;
-    //margin-right: auto;
-    position: relative;
-    //margin-top: 50px;
-    //padding: 0 10px;
-    @include comp_common_margins((top: 50px,right: auto,left: auto));
-    @include comp_common_paddings((top: 0,right: 10px,bottom: 0,left: 10px));
+/*.home .panel {
+    height: $compPanelHeight;
+    color: $compPanelColor;
+    max-width: $compPanelMax-width;
+    position: $compPanelPosition;
+    @include comp_common_margins($compPanelMargins);
+    @include comp_common_paddings($compPanelPaddings);
+}*/
+.home .panel .panel-head {
+    @include comp_common_paddings((top: 8px,right: 10px,bottom: 2px,left: 10px));
 }
-@include comp_common_list(".home panel_",((background:rgba(3,54,97,0.65)),(background:rgba(0,0,0,0.6)),(background:rgba(72,36,72,0.7)),(background:rgba(13,12,39,0.67))));
+
+@include comp_common_list(".home panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6)),(background:rgba(72,36,72,0.7)),(background:rgba(13,12,39,0.67))));
+@include comp_common_Maps(".home .panel .panel-title",((font-size: 23px),(font-weight: bold),(margin-top: 10px)));
+@include comp_common_Maps(".home .panel .right-text",((font-size: 14px),(font-weight: normal),(float: right)));
+
+
+.home .panel .panel-body
+{
+    @include comp_common_Maps(".data",((font-size: 20px),(font-weight: bold),( margin-right: 8px)));
+    @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
+    
+    @include comp_common_Maps("table",((font-size: 14px),(color: #ffffff),(width: 97%),(margin: 5px auto),(text-align: center)));
+    @include comp_common_MapAttr("table tr",(height: 40px));
+    @include comp_common_MapAttr("table th",(font-weight: normal));
+    @include comp_common_MapAttr("table img",(vertical-align: baseline));
+    
+    @include comp_common_Maps(".text fieldset",((border-width: 1px 0 0),(border-style: solid),(border-color: #ccc)));
+    @include comp_common_Maps(".text fieldset > legend",((border: 0 none),(color: #fff),(margin: 0),(padding: 0 20px),(font-size: 14px),(width: auto)));
+    
+} 

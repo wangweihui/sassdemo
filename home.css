@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* line 5, base/base_apply.scss */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+strong,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  border: 0; }
+
+/* line 27, base/base_apply.scss */
+body {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "微软雅黑", Helvetica, sans-serif;
+  width: 100%;
+  height: 100%; }
+
+/*默认高度为500px*/
+/* line 4, components/titlepanel/component_titlepanel_apply.scss */
+.panel {
+  height: 510px;
+  color: #fff;
+  max-width: 360px;
+  position: relative;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px; }
+
+/*.home .panel {
+    height: $compPanelHeight;
+    color: $compPanelColor;
+    max-width: $compPanelMax-width;
+    position: $compPanelPosition;
+    @include comp_common_margins($compPanelMargins);
+    @include comp_common_paddings($compPanelPaddings);
+}*/
+/* line 14, home.scss */
+.home .panel .panel-head {
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  padding-left: 10px; }
+
+/* line 54, components/component_common.scss */
+.home panel_1 {
+  background: rgba(3, 54, 97, 0.65); }
+
+/* line 54, components/component_common.scss */
+.home panel_2 {
+  background: rgba(0, 0, 0, 0.6); }
+
+/* line 54, components/component_common.scss */
+.home panel_3 {
+  background: rgba(72, 36, 72, 0.7); }
+
+/* line 54, components/component_common.scss */
+.home panel_4 {
+  background: rgba(13, 12, 39, 0.67); }
+
+/* line 69, components/component_common.scss */
+.home .panel .panel-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 10px; }
+
+/* line 69, components/component_common.scss */
+.home .panel .right-text {
+  font-size: 14px;
+  font-weight: normal;
+  float: right; }
+
+/* line 69, components/component_common.scss */
+.home .panel .panel-body .data {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px; }
+/* line 69, components/component_common.scss */
+.home .panel .panel-body .text {
+  font-size: 14px;
+  margin: 19px 6px; }
+/* line 69, components/component_common.scss */
+.home .panel .panel-body table {
+  font-size: 14px;
+  color: #ffffff;
+  width: 97%;
+  margin: 5px auto;
+  text-align: center; }
+/* line 91, components/component_common.scss */
+.home .panel .panel-body table tr {
+  height: 40px; }
+/* line 91, components/component_common.scss */
+.home .panel .panel-body table th {
+  font-weight: normal; }
+/* line 91, components/component_common.scss */
+.home .panel .panel-body table img {
+  vertical-align: baseline; }
+/* line 69, components/component_common.scss */
+.home .panel .panel-body .text fieldset {
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: #ccc; }
+/* line 69, components/component_common.scss */
+.home .panel .panel-body .text fieldset > legend {
+  border: 0 none;
+  color: #fff;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  width: auto; }
+
+/*# sourceMappingURL=home.css.map */

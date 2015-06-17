@@ -1,6 +1,6 @@
 /*
 Error: Invalid GBK character "\xE4"
-        on line 4 of G:\learning\git\sassdemo\main.scss
+        on line 4 of G:\learning\sassdemo\main.scss
 
 1: @import "base/base_apply.scss";
 2: @import "themes/theme_default_apply.scss";
@@ -10,7 +10,7 @@ Error: Invalid GBK character "\xE4"
 6: *\/
 
 Backtrace:
-G:\learning\git\sassdemo\main.scss:4
+G:\learning\sassdemo\main.scss:4
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
@@ -32,4 +32,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE4\"\A         on line 4 of G:\learning\git\sassdemo\main.scss\A \A 1: @import \"base/base_apply.scss\";\A 2: @import \"themes/theme_default_apply.scss\";\A 3: /*\A 4: 主应用测试文件\A 5: \A 6: */"; }
+  content: "Error: Invalid GBK character \"\xE4\"\A         on line 4 of G:\learning\sassdemo\main.scss\A \A 1: @import \"base/base_apply.scss\";\A 2: @import \"themes/theme_default_apply.scss\";\A 3: /*\A 4: 主应用测试文件\A 5: \A 6: */"; }

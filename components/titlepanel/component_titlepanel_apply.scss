@@ -1,8 +1,12 @@
 @charset "UTF-8";
 @import "component_titlepanel.scss";
 /*默认高度为500px*/
-.panelDefault
-{
+.panel {
     height: $compPanelHeight;
+    color: $compPanelColor;
+    max-width: $compPanelMax-width;
+    position: $compPanelPosition;
+    @include comp_common_margins($compPanelMargins);
+    @include comp_common_paddings($compPanelPaddings);
 }
 
