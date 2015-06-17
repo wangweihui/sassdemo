@@ -64,7 +64,7 @@ $compCommonColor: #fff;
 ///@parameter $compCommonParam list&lt;map&lt;string,string&gt;&gt;格式的列表
 ///@example @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
 ///
-@mixin comp_common_Maps($selector,$compCommonParam)
+@mixin comp_common_listMaps($selector,$compCommonParam)
 {
      #{$selector}
      {

@@ -1,6 +1,8 @@
 @charset "UTF-8";
+@import "../component_common.scss";
 @import "component_titlepanel.scss";
-/*默认高度为500px*/
+
+
 .panel {
     height: $compPanelHeight;
     color: $compPanelColor;
@@ -9,4 +11,6 @@
     @include comp_common_margins($compPanelMargins);
     @include comp_common_paddings($compPanelPaddings);
 }
+
+@include comp_common_listMaps(".panel-title",(join($compPanelTitleFonts,$compPanelTitleMarginTop)));
 

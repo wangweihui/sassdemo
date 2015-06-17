@@ -34,3 +34,11 @@ $compPanelMargins:(top: 50px,right: auto,left: auto);
 ///
 $compPanelPaddings:(top: 0,right: 10px,bottom: 0,left: 10px);
 
+///panel-title 字体样式
+///@type list
+///
+$compPanelTitleFonts:((font-size:23px),(font-weight:bold));
+///panel-title margin-top margin-bottom 属性，默认10px,0
+///@type list
+///
+$compPanelTitleMarginTop:((margin-top:10px),(margin-bottom:0));
