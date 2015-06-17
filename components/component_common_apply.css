@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /*默认四个内外边距为0*/
+/* line 4, component_common_apply.scss */
 .component_common {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
   color: #fff; }
 
 /*# sourceMappingURL=component_common_apply.css.map */

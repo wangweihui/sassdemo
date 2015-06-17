@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '_base';
+@import 'base';
 //@import '../themes/_theme_default.scss';
 
 html,
@@ -20,7 +20,7 @@ li
     margin: $baseMargin;
     padding: $basePadding;
     clear: $baseClear;
-    box-sizing: $baseboxSizing;
+    @include base_border_box();
     vertical-align: $baseVerticalAlign;
     border: $baseBoder;
 }

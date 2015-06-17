@@ -1,4 +1,9 @@
 @charset "UTF-8";
+////
+/// Description公共基础属性和方法
+/// @group base
+/// @author wangweihui
+///
 
 //----------------------------------------- 字体 start ---------------------------------------
 //默认字体大小
@@ -20,3 +25,28 @@ $baseBodyWidth: 100%;
 $baseBodyHeight: 100%;
 $baseBoder: 0;
 //----------------------------------------- 初始化布局 end ----------------------------------
+///box-sizing为border-box
+///@example @include base_border_box();
+@mixin base_border_box()
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin comp_common_list($preselector,$compCommonParam)
+{
+    $num: length($compCommonParam);
+    @for $index from 1 through $num
+    {
+        $cssObj: nth($compCommonParam,$index);
+        
+        @each $cssAttr,$cssValue in $cssObj
+        {
+            #{$preselector}#{$index}
+            {
+                #{$cssAttr}:$cssValue;
+            }
+        }
+    }
+}
