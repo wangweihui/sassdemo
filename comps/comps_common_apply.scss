@@ -1,5 +1,5 @@
-@charset "UTF-8";
-@import "component_common.scss";
+﻿@charset "UTF-8";
+@import "comps_common.scss";
 /*默认四个内外边距为0*/
 .component_common
 {
@@ -8,6 +8,6 @@
     
     color: $compCommonColor;
     @include comp_common_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));
-    @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
+    @include comp_common_listMaps(".text",((font-size: 14px),(margin: 19px  6px)));
     @include comp_common_MapAttr("table tr",(height: 40px));
 }
