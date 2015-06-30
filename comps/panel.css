@@ -1,0 +1,75 @@
+/* line 116, panel.scss */
+.panel {
+  color: #333333;
+  position: relative;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border: 1px solid #eeeeee; }
+/* line 127, panel.scss */
+.panel .panel-heading {
+  border-bottom: 1px solid transparent;
+  padding: 10px 15px 0px 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+/* line 134, panel.scss */
+.panel .panel-heading .corner > i.fa {
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  color: #fff; }
+/* line 138, panel.scss */
+.panel .panel-heading .tools {
+  float: right;
+  display: inline-block;
+  height: 30px; }
+/* line 142, panel.scss */
+.panel .panel-heading .caption {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 22px;
+  margin-right: 15px;
+  float: left;
+  display: inline-block;
+  color: #999; }
+/* line 69, comps_common.scss */
+.panel .panel .panel-body {
+  margin: 0px auto;
+  padding-bottom: 20px;
+  text-align: center; }
+/* line 149, panel.scss */
+.panel .panel-heading .tools .btn-icon {
+  position: relative;
+  border: 0 none;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 0;
+  background-color: #fff; }
+/* line 153, panel.scss */
+.panel .panel-heading .tools > a, .panel .panel-heading .tools > .btn, .panel .panel-heading .tools > .btn-group {
+  margin-left: 15px; }
+/* line 156, panel.scss */
+.panel .panel-heading .tools .fa-angle-up, .panel .panel-heading .tools .fa-angle-down {
+  font-size: 25px;
+  margin-top: 6px;
+  color: #999;
+  height: 16px;
+  line-height: 16px;
+  position: relative;
+  margin-top: -3px; }
+/* line 160, panel.scss */
+.panel .panel-heading .tools .fa-download {
+  color: #666; }
+/* line 163, panel.scss */
+.panel .panel-heading .corner {
+  width: 15px; }

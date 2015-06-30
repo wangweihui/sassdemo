@@ -1,4 +1,7 @@
 ﻿@charset "UTF-8";
+@import "comps_common.scss";
+
+
 
 ////
 /// Description组件panel公共属性和方法
@@ -107,3 +110,60 @@ $panelToolsBtn: (position: relative, border: 0 none, font-size: 18px, line-heigh
 ///
 ///
 $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, line-height: 16px, position: relative);
+
+
+.panel {
+    &{
+        color: $panelColor;
+        position: $panelPosition;
+        @include comp_common_margins($panelMargins);
+        @include comp_common_paddings($panelPaddings);
+        @include comp_common_boxShadow($panelBoxShadow);
+        @include comp_common_MapMulStyles($panelOthers);
+        border:1px solid #eeeeee;
+      }
+    
+    
+    .panel-heading {
+        border-bottom: $panelHeadingBorderBottom;
+        padding: $panelHeadingPaddings;
+        border-top-left-radius: $panelHeadingTopLeftRadius;
+        border-top-right-radius: $panelHeadingTopRightRadius;
+    }
+    
+    .panel-heading .corner > i.fa {
+        @include comp_common_MapMulStyles($panelIcons);
+    }
+    
+    .panel-heading .tools {
+        @include comp_common_MapMulStyles($panelTools);
+        height:30px
+    }
+    .panel-heading .caption
+    {
+        @include comp_common_MapMulStyles($panelCaptionFonts);
+        @include comp_common_MapMulStyles($panelCaptionOthers);
+    }
+    @include comp_common_listMaps(".panel .panel-body",$panelBody);
+    
+    .panel-heading .tools .btn-icon {
+        @include comp_common_MapMulStyles($panelToolsBtn);
+    }
+    
+    .panel-heading .tools > a, .panel-heading .tools > .btn, .panel-heading .tools > .btn-group {
+        margin-left: 15px;
+    }
+    .panel-heading .tools .fa-angle-up, .panel-heading .tools .fa-angle-down {
+      @include comp_common_MapMulStyles($panelToolsAngle);
+      margin-top: -3px;
+    }
+    .panel-heading .tools .fa-download {
+        color: #666;
+    }
+    .panel-heading .corner {
+      width: 15px;
+    }
+}
+
+
+

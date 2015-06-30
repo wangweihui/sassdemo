@@ -1,4 +1,5 @@
 ﻿@charset "UTF-8";
+@import "comps_common.scss";
 
 ////
 /// Description组件card公共属性和方法
@@ -43,3 +44,31 @@ $cardSubcaptionStyles: (font-size: 14px, float: right);
 ///@type map
 ///
 $cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center);
+
+
+.card
+{
+    &
+    {
+        color: $panelColor;
+        @include comp_common_MapMulStyles($cardMargins);
+        @include comp_common_MapMulStyles($cardPaddings);
+        @include comp_common_MapMulStyles($cardOthers);
+     }
+    .card-heading
+    {
+        @include comp_common_MapMulStyles($cardHeadingPaddings);
+    }
+    .card-heading .card-caption
+    {
+        @include comp_common_MapMulStyles($cardCaptionStyles);
+    }
+    .card-heading .card-subcaption
+    {
+        @include comp_common_MapMulStyles($cardSubcaptionStyles);
+    }
+    .card-heading .card-body
+    {
+        @include comp_common_MapMulStyles($cardBodyStyles);
+    }
+}

@@ -4,3 +4,9 @@
 $defaultFontColor: #808080;
 //默认背景颜色
 $defaultBackgroundColor: #fff;
+
+body
+{
+    color: $defaultFontColor;
+    background-color: $defaultBackgroundColor;
+}

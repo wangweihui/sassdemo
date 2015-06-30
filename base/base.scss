@@ -8,23 +8,10 @@
 //----------------------------------------- 字体 start ---------------------------------------
 //默认字体大小
 $baseFontSize: 14px;
-//默认字体粗细
-$baseFontWeight: normal;
 //默认字体家族
-$baseFontFamily: "微软雅黑",Helvetica,sans-serif;
+$baseFontFamily: "Microsoft YaHei","微软雅黑",Helvetica,sans-serif;
 //----------------------------------------- 字体 end -----------------------------------------
 
-//----------------------------------------- 初始化布局 start ----------------------------------
-//默认初始化零内外边距，清除浮动
-$baseMargin: 0;
-$basePadding: 0;
-$baseClear: both;
-$baseboxSizing: border-box;
-$baseVerticalAlign: bottom;
-$baseBodyWidth: 100%;
-$baseBodyHeight: 100%;
-$baseBoder: 0;
-//----------------------------------------- 初始化布局 end ----------------------------------
 ///box-sizing为border-box
 ///@example @include base_border_box();
 @mixin base_border_box()
@@ -33,4 +20,10 @@ $baseBoder: 0;
     -moz-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body
+{
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
 }

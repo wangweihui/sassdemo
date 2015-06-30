@@ -1,0 +1,83 @@
+/* line 29, table.scss */
+.table {
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin-bottom: 0; }
+
+/* line 37, table.scss */
+.table tr td span.rank {
+  border-radius: 5px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+  text-align: center; }
+
+/* line 50, table.scss */
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 4px;
+  vertical-align: middle;
+  border: none; }
+
+/* line 55, table.scss */
+.table > thead > tr > th, .table > thead > tr > td {
+  text-align: center; }
+
+/* line 63, table.scss */
+.table.striped tbody tr:nth-child(2n) {
+  background-color: #eee; }
+
+/* line 69, table.scss */
+.table .grey_background {
+  background: #e0e0e0;
+  color: #424242; }
+
+/* line 74, table.scss */
+.table .grey_text {
+  color: #e0e0e0; }
+
+/* line 78, table.scss */
+.table .black_background {
+  background: rgba(0, 0, 0, 0.32);
+  color: #fff; }
+
+/* line 83, table.scss */
+.table .black_text {
+  color: rgba(0, 0, 0, 0.32); }
+
+/* line 87, table.scss */
+.table .red_background {
+  background: rgba(231, 35, 35, 0.53);
+  color: #fff; }
+
+/* line 92, table.scss */
+.table .red_text {
+  color: rgba(231, 35, 35, 0.53); }
+
+/* line 96, table.scss */
+.table .green_background {
+  background: rgba(51, 204, 102, 0.43);
+  color: #fff; }
+
+/* line 101, table.scss */
+.table .green_text {
+  color: rgba(51, 204, 102, 0.43); }
+
+/* line 105, table.scss */
+.table .blue_background {
+  background: rgba(6, 146, 249, 0.45);
+  color: #fff; }
+
+/* line 110, table.scss */
+.table .blue_text {
+  color: rgba(6, 146, 249, 0.45); }
+
+/* line 114, table.scss */
+.table .yellow_background {
+  background: rgba(255, 159, 0, 0.57);
+  color: #fff; }
+
+/* line 119, table.scss */
+.table .yellow_text {
+  color: rgba(255, 159, 0, 0.57); }

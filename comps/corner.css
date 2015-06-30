@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*红、橙、黄、蓝、黄绿颜色的三角形状，如果需要别的颜色，覆盖即可
+    例如：黄色左上三角 添加 .corner-yellow .corner-left-top
+*/
+/* line 6, corner.scss */
+.corner-red:before {
+  border: 0 solid red; }
+
+/* line 10, corner.scss */
+.corner-orange:before {
+  border: 0 solid orange; }
+
+/* line 14, corner.scss */
+.corner-yellow:before {
+  border: 0 solid yellow; }
+
+/* line 18, corner.scss */
+.corner-blue:before {
+  border: 0 solid #0166FF; }
+
+/* line 22, corner.scss */
+.corner-teal:before {
+  border: 0 solid #3ca470; }
+
+/* line 25, corner.scss */
+.corner-greenyellow:before {
+  border: 0 solid #7cb342; }
+
+/* line 28, corner.scss */
+.corner-cyan:before {
+  border: 0 solid #00bcd4; }
+
+/* line 31, corner.scss */
+.corner-deep-orange:before {
+  border: 0 solid #bf360c; }
+
+/* line 34, corner.scss */
+.corner-light-blue:before {
+  border: 0 solid #01579b; }
+
+/* line 37, corner.scss */
+.corner-light-bluea:before {
+  border: 0 solid #40c4ff; }
+
+/* line 40, corner.scss */
+.corner-pink:before {
+  border: 0 solid #d81b60; }
+
+/* line 43, corner.scss */
+.corner-teal-accent-4:before {
+  border: 0 solid #00bfa5; }
+
+/* line 47, corner.scss */
+.corner-left-top, .corner-left-bottom, .corner-right-top, .corner-right-bottom {
+  width: 0;
+  height: 0; }
+
+/*左上三角，默认高度和宽度为35px*/
+/* line 52, corner.scss */
+.corner-left-top:before {
+  border-bottom: 35px solid transparent;
+  border-left-width: 35px;
+  border-right: 35px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 0px;
+  position: absolute;
+  top: 0px; }
+
+/*左下三角，默认高度和宽度为35px*/
+/* line 63, corner.scss */
+.corner-left-bottom:before {
+  border-top: 35px solid transparent;
+  border-left-width: 35px;
+  border-right: 35px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+/*右上三角，默认高度和宽度为35px*/
+/* line 74, corner.scss */
+.corner-right-top:before {
+  border-bottom: 35px solid transparent;
+  border-left-width: 35px solid transparent;
+  border-right-width: 35px;
+  content: "";
+  display: inline-block;
+  top: 0px;
+  position: absolute;
+  right: 0px; }
+
+/*右下三角，默认高度和宽度为35px*/
+/* line 85, corner.scss */
+.corner-right-bottom:before {
+  border-top: 35px solid transparent;
+  border-left-width: 35px solid transparent;
+  border-right-width: 35px;
+  content: "";
+  display: inline-block;
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }

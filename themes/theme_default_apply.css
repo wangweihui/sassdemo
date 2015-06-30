@@ -1,8 +1,0 @@
-@charset "UTF-8";
-/*重新给变量赋值，即可覆盖默认值*/
-/*$defaultBackgroundColor: #0ff;*/
-body {
-  color: #808080;
-  background-color: #fff; }
-
-/*# sourceMappingURL=theme_default_apply.css.map */

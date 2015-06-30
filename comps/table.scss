@@ -25,3 +25,98 @@ $table_white:#fff;
 $table_black: rgba(0,0,0,0.32);
 ///
 $table_grey:#e0e0e0;
+
+.table
+{
+    width:100%;
+    border:none;
+    text-align:center;
+    //覆盖bootstrap中margin-bottom:20px;
+    margin-bottom:0;
+}
+.table tr td span.rank {
+  border-radius: 5px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+  text-align: center;
+}
+
+///
+///覆盖bootstrap中padding:8px;和vertical-align:top;
+///减小行间距，行内水平方向居中
+///
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 4px;
+  vertical-align:middle;
+  border:none;
+}
+.table > thead > tr > th,.table > thead > tr > td
+{
+    text-align:center;
+}
+///
+///文字居中显示
+///
+
+.table.striped tbody tr:nth-child(2n) 
+{
+  background-color: #eee;
+}
+
+
+.table .grey_background
+{
+    background:$table_grey;
+    color:#424242;
+}
+.table .grey_text
+{
+    color:$table_grey;
+}
+.table .black_background
+{
+    background: $table_black;
+    color: $table_white;
+}
+.table .black_text
+{
+    color:$table_black;
+}
+.table .red_background 
+{
+    background: $table_red;
+    color: $table_white;
+}
+.table .red_text 
+{
+    color: $table_red;
+}
+.table .green_background
+{
+    background: $table_green;
+    color: $table_white;
+}
+.table .green_text
+{
+    color: $table_green;
+}
+.table .blue_background
+{
+    background: $table_blue;
+    color: $table_white;
+}
+.table .blue_text
+{
+    color: $table_blue;
+}
+.table .yellow_background 
+{
+    background: $table_yellow;
+    color: $table_white;
+}
+.table .yellow_text 
+{
+    color: $table_yellow;
+}
