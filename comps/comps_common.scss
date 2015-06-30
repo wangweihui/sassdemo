@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 ////
 /// Description组件公共属性和方法
 /// @group comps.comps_common
@@ -81,7 +81,7 @@ $compCommonColor: #fff;
     }
 }
 ///
-///给选择器设置单个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
+///给选择器设置单个MAP 多个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
 ///@parameter $selector CSS选择器，
 ///@parameter $attrMap map&lt;string,string&gt;格式的map
 ///@example @include comp_common_MapAttr("table tr",(height: 40px));
@@ -96,5 +96,25 @@ $compCommonColor: #fff;
         }
     }
 }
-
-
+///
+///给选择器boxShadow
+///@parameter $shadow;格式的string
+///@example @include comp_common_boxShadow(0 1px 1px rgba(0,0,0,.05));
+///
+@mixin comp_common_boxShadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+///
+///给选择器设置单个MAP 多个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
+///@parameter $selector CSS选择器，
+///@parameter $attrMap map&lt;string,string&gt;格式的map
+///@example @include comp_common_MapAttr("table tr",(height: 40px));
+///
+@mixin comp_common_MapMulStyles($attrMap)
+{
+    @each $cssAttr,$cssValue in $attrMap
+    {
+            #{$cssAttr}:$cssValue;
+    }
+}

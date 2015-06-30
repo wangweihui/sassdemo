@@ -1,0 +1,109 @@
+﻿@charset "UTF-8";
+
+////
+/// Description组件panel公共属性和方法
+/// @group comps.panel
+/// @author wangweihui
+///
+///
+
+
+///panel高度,默认为500px
+///@type Number
+///
+$panelHeight: 510px;
+///panel内容颜色,默认为#333333
+///@type uint
+///
+$panelColor: #333333;
+///panel最大宽度,默认为360px
+///@type Number
+///
+$panelMax-width: 360px;
+///panel布局,默认为relative
+///@type string
+///
+$panelPosition: relative;
+
+///panel外边距,默认为(top: 50px,right: auto,left: auto)
+///@type string
+///
+$panelMargins: (top:0,right: 0,left: 0);
+
+///panel内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
+///@type string
+///
+$panelPaddings: (top: 0,right: 0,bottom: 0,left: 0);
+///panel其他样式
+///@type string
+///
+$panelOthers: (background-color: #fff,border: 1px solid transparent,border-radius: 4px);
+///
+///panel左边icon的样式
+///@type map
+///
+$panelIcons: (left: 4px,position: absolute,top: 3px,color: #fff);
+
+$panelBoxShadow: 0 1px 1px rgba(0,0,0,.05);
+// -webkit-box-shadow: ;
+// box-shadow: 0 1px 1px rgba(0,0,0,.05);),
+
+///panel-title 字体样式
+///@type list
+///
+$panelCaptionFonts: (font-size:16px,font-weight:bold);
+///panel-title 其他属性，默认margin-top:10px,margin-bottom:0
+///@type list
+///
+$panelCaptionOthers: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999);
+//--------------------------------------------------------------------------------------
+//.panel .panel-heading变量
+///.panel-heading 外边距
+///@type map
+///
+///
+$panelHeadingPaddings: 10px 15px 0px 15px;
+///
+///.panel-heading 底部边框,默认1px,transparent
+///@type string
+///
+///
+$panelHeadingBorderBottom: 1px solid transparent;
+
+///
+///.panel-heading 左上角圆角半径,默认3px
+///@type number
+///
+///
+$panelHeadingTopLeftRadius: 3px;
+
+///
+///.panel-heading 右上角圆角半径,默认3px
+///@type number
+///
+///
+$panelHeadingTopRightRadius: 3px;
+///
+///.panel-body 样式
+///@type number
+///
+///
+$panelBody: ((margin: 0px auto),(padding-bottom:20px),(text-align: center));
+///
+///.panel tools 样式
+///@type number
+///
+///
+$panelTools: (float: right,display: inline-block);
+///
+///.panel tools btn样式
+///@type number
+///
+///
+$panelToolsBtn: (position: relative, border: 0 none, font-size: 18px, line-height: 18px, height: 18px, padding: 0, background-color: #fff);
+///
+///.panel tools angle样式
+///@type number
+///
+///
+$panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, line-height: 16px, position: relative);

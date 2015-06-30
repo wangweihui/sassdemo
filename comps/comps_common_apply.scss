@@ -1,13 +1,95 @@
 ﻿@charset "UTF-8";
 @import "comps_common.scss";
-/*默认四个内外边距为0*/
-.component_common
-{
-    @include comp_common_margins();
-    @include comp_common_paddings();
-    
-    color: $compCommonColor;
-    @include comp_common_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));
-    @include comp_common_listMaps(".text",((font-size: 14px),(margin: 19px  6px)));
-    @include comp_common_MapAttr("table tr",(height: 40px));
+
+/*红、橙、黄、蓝、黄绿颜色的三角形状，如果需要别的颜色，覆盖即可
+    例如：黄色左上三角 添加 .corner-yellow .corner-left-top
+*/
+.corner-red:before {
+    border: 0 solid red;
+}
+
+.corner-orange:before {
+    border: 0 solid orange;
+}
+
+.corner-yellow:before {
+    border: 0 solid yellow;
+}
+
+.corner-blue:before {
+    border: 0 solid #0166FF;
+}
+
+.corner-teal:before {
+    border: 0 solid #3ca470;
+}
+.corner-greenyellow:before {
+    border: 0 solid #7cb342;
+}
+.corner-cyan:before {
+    border: 0 solid #00bcd4;
+}
+.corner-deep-orange:before {
+    border: 0 solid #bf360c;
+}
+.corner-light-blue:before {
+    border: 0 solid #01579b;
+}
+.corner-light-bluea:before {
+    border: 0 solid #40c4ff;
+}
+.corner-pink:before {
+    border: 0 solid #d81b60;
+}
+.corner-teal-accent-4:before {
+    border: 0 solid #00bfa5;
+}
+
+.corner-left-top, .corner-left-bottom, .corner-right-top, .corner-right-bottom {
+    width: 0;
+    height: 0;
+}
+/*左上三角，默认高度和宽度为35px*/
+.corner-left-top:before {
+    border-bottom: 35px solid transparent;
+    border-left-width: 35px;
+    border-right: 35px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+}
+/*左下三角，默认高度和宽度为35px*/
+.corner-left-bottom:before {
+    border-top: 35px solid transparent;
+    border-left-width: 35px;
+    border-right: 35px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+/*右上三角，默认高度和宽度为35px*/
+.corner-right-top:before {
+    border-bottom: 35px solid transparent;
+    border-left-width: 35px solid transparent;
+    border-right-width: 35px;
+    content: "";
+    display: inline-block;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+}
+/*右下三角，默认高度和宽度为35px*/
+.corner-right-bottom:before {
+    border-top: 35px solid transparent;
+    border-left-width: 35px solid transparent;
+    border-right-width: 35px;
+    content: "";
+    display: inline-block;
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
 }

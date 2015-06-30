@@ -1,0 +1,27 @@
+﻿@charset "UTF-8";
+
+///Description组件table样式
+/// @group comps.table
+/// @author wangweihui
+///
+///在table标签添加class = "table"
+///需要透明和灰色隔行背景色的，添加类striped
+///table默认文字居中text-align:center;border:none;需改变的可自行覆盖
+///第一列数字需要背景色的，span添加类rank，默认背景24px*24px
+///提供设计图中红、蓝、绿、黄、灰、黑六种半透明颜色值的背景色和前景色的类，分别为
+///red_background、blue_background、green_background、yellow_background、grey_background、black_background
+///red_text、blue_text、green_text、yellow_text、grey_text、black_text
+///.table下的td、th、tr默认4px的内边距，vertical-align:middle，border:none;需改变的可自行覆盖
+///
+$table_red:rgba(231,35,35,0.53);
+$table_green:rgba(51,204,102,0.43);
+$table_blue:rgba(6,146,249,0.45);
+$table_yellow:rgba(255,159,0,0.57);
+$table_white:#fff;
+///
+///table中rank 半透明黑色背景
+///@type rgba()
+///
+$table_black: rgba(0,0,0,0.32);
+///
+$table_grey:#e0e0e0;

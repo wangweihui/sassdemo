@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;AAIA;;;;;;;;;;;;;EAcA;EACI,MAAM,ECNG,CAAC;EDOV,OAAO,ECNG,CAAC;EDOX,KAAK,ECNG,IAAI;EDOZ,UAAU,ECNE,UAAU;EDOtB,cAAc,ECNE,MAAM;EDOtB,MAAM,ECJE,CAAC;;;ADMb,IACA;EACI,SAAS,ECxBE,IAAI;EDyBf,UAAU,ECvBG,MAAM;EDwBnB,WAAW,ECtBE,6BAAM;EDuBnB,KAAK,ECbO,IAAI;EDchB,MAAM,ECbO,IAAI;;;;;ACbrB,IACA;EACI,KAAK,ECLU,OAAO;EDMtB,gBAAgB,ECJK,IAAI",
-"sources": ["base/base_apply.scss","base/_base.scss","themes/theme_default_apply.scss","themes/_theme_default.scss"],
-"names": [],
-"file": "main.css"
-}

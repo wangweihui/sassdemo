@@ -1,0 +1,45 @@
+﻿@charset "UTF-8";
+
+////
+/// Description组件card公共属性和方法
+/// @group comps.card
+/// @author wangweihui
+///
+///
+
+//$cardPosition: relative;
+///panel内容颜色,默认为白色#333333
+///@type uint
+///
+$panelColor: #fff;
+
+///card外边距,默认为(top: 50px,right: auto,left: auto)
+///@type map
+///
+$cardMargins: (margin:20px auto 0 auto);
+
+///card内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
+///@type map
+///
+$cardPaddings: (padding:0);
+///card其他样式
+///@type map
+///
+$cardOthers: (position: relative);
+///card-heading样式
+///@type map
+///
+$cardHeadingPaddings: (padding:8px 10px 2px 10px);
+///card-Caption样式
+///@type map
+///
+$cardCaptionStyles: (font-size: 23px, margin-top: 4px);
+//font-weight: bold, 
+///card sub-Caption样式
+///@type map
+///
+$cardSubcaptionStyles: (font-size: 14px, float: right);
+///card-body样式
+///@type map
+///
+$cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center);
