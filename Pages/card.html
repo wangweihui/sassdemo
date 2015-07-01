@@ -4,34 +4,69 @@
 	<head>
 		<meta charset="utf-8">
 		<title>card样式</title>
-		<link rel="stylesheet" type="text/css" href="card_default.css" />
+		<link rel="stylesheet" type="text/css" href="../vendors/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="card_ custom.css" />
 	</head>
 
-	<body>
+	<body class="carddemo">
 		<p>card样式</p>
-		<div class="card cyan darken-4">
-			<div class="card-heading">
-				<h3 class="card-caption">
-                        card主标题默认字体颜色白色
-                        <span class="card-subcaption">副标题默认字体白色</span>
+		<div class="container-fluid">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="card grey darken-1">
+					<div class="card-heading">
+						<h3 class="card-caption ">
+                        改变背景颜色的card
+                        <span class="card-subcaption">副标题</span>
                     </h3>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>默认字体颜色为白色，默认背景透明；</li>
+							<li>.card中标题.card-heading中主标题.card-caption和副标题.card-subcaption;</li>
+							<li>.card内容区域.card-body；</li>
+							<li>修改card全局字体颜色，可在import card.scss 之后，覆盖$cardFontColor变量，编译得css文件；</li>
+							<li>.card各部分背景颜色和字体颜色也可以在color-palette中选取,添加对应的类在.card根节点即可;</li>
+							<li>可以CSS覆盖以上各类默认样式；</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="card-body">
-				card背景颜色可以在color-palette中选取,添加对应的类在car根节点即可
-			</div>
-		</div>
-		<div class="card deep-purple darken-4">
-			<div class="card-heading">
-				<h3 class="card-caption red-text text-darken-4">
-                        标题颜色可以在color-palette中选取,添加对应的类在card-caption之后即可
-                        <span class="card-subcaption  blue-text text-darken-1">副标题</span>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="card grey lighten-5">
+					<div class="card-heading  orange darken-4">
+						<h3 class="card-caption brown-text text-darken-3">
+                        标题颜色
+                        <span class="card-subcaption  greentext text-darken-2">副标题</span>
                     </h3>
+					</div>
+					<div class="card-body grey lighten-4 red-text text-darken-4">
+						<ul>
+							<li>.card标题栏.card-heading默认继承.card背景颜色和字体，可覆盖； </li>
+							<li>.card面板内容区域的.card-body背景和字体颜色默认继承.card样式，可覆盖；</li>
+							<li>.card面板内容区域.card-body大小根据内容自适应，如需对齐等，可CSS进行设置；</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="card-body teal darken-4">
-				<p>card 面板内容区域的背景颜色同样可以自定义</p>
-				<p class="red-text text-darken-4">card 面板内容区域的背景颜色同样可以自定义</p>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="card cyan darken-4">
+					<div class="card-heading">
+						<h3 class="card-caption deep-purple-text text-darken-4">
+                        标题
+                        <span class="card-subcaption">副标题</span>
+                    </h3>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>.card主标题.card-caption和副标题.card-subcaption字体颜色默认为白色，可以在color-palette中选取,添加对应的类节点或者CSS覆盖;</li>
+						</ul>
+					</div>
+				</div>
 			</div>
+			
+
 		</div>
+
 	</body>
 
 </html>

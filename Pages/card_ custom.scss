@@ -1,0 +1,21 @@
+@import url("../Themes/color.css");
+@import "../Base/base.scss";
+
+$cardFontColor:#ff0;
+@import "../Comps/card.scss";
+
+
+$cardbodybackground:#fff;
+.carddemo
+{
+	&{
+		background: rgba($cardbodybackground,0.2);
+		}
+		
+		.card
+		{
+			@include base_box-shadow(0 2px 2px rgba(0,0,0,.3),0 3px 3px rgba(0,0,0,.3),0 4px 4px rgba(0,0,0,.3));
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+}
