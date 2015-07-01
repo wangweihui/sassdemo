@@ -14,6 +14,12 @@
 ///
 $cardFontColor: #fff !default;
 
+//$cardPosition: relative;
+///panel内容颜色,默认为白色#333333
+///@type uint
+///
+$cardBackground: transparent !default;
+
 ///card外边距,默认为(top: 50px,right: auto,left: auto)
 ///@type map
 ///
@@ -50,6 +56,7 @@ $cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center);
 {
     &
     {
+        background: $cardBackground;
         color: $cardFontColor;
         @include comp_common_MapMulStyles($cardMargins);
         @include comp_common_MapMulStyles($cardPaddings);
