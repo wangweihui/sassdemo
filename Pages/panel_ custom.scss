@@ -1,0 +1,21 @@
+@import url("../Themes/color.css");
+@import "../Base/base.scss";
+
+$panelBackground:#fff;
+$panelColor:#424242;
+
+@import "../Comps/panel.scss";
+
+.paneldemo
+{
+	&{
+		//background: rgba($cardBackground,0.2);
+		}
+		
+		.panel
+		{
+			//@include mixin_boxShadow(0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3));
+			//border: 1px solid transparent;
+			//border-radius: 4px;
+		}
+}

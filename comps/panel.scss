@@ -41,21 +41,21 @@ $panelBorderRadius:0 !default;
 ///panel外边距,默认为(top: 50px,right: auto,left: auto)
 ///@type string
 ///
-$panelMargins: (top:0,right: 0,left: 0);
+$panelMargins: (top:0,right: 0,left: 0) !default;
 
 ///panel内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
 ///@type string
 ///
-$panelPaddings: (top: 0,right: 0,bottom: 0,left: 0);
+$panelPaddings: (top: 0,right: 0,bottom: 0,left: 0) !default;
 ///panel其他样式
 ///@type string
 ///
-$panelOthers: ();
+$panelOthers: () !default;
 ///
 ///panel左边icon的样式
 ///@type map
 ///
-$panelIcons: (left: 4px,position: absolute,top: 3px,color: #fff);
+$panelIcons: (left: 4px,position: absolute,top: 3px,color: #fff) !default;
 ///
 ///panel box-shadow属性，默认0 1px 1px rgba(0,0,0,.05)
 ///@type string
@@ -67,62 +67,62 @@ $panelBoxShadow: 0 1px 1px rgba(0,0,0,.05) !default;
 ///panel-title 字体样式
 ///@type list
 ///
-$panelCaptionFonts: (font-size:16px,font-weight:bold);
-///panel-title 其他属性，默认margin-top:10px,margin-bottom:0
+$panelCaptionFonts: (font-size:16px,font-weight:bold) !default;
+///panel-title 其他属性，默认margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999
 ///@type list
 ///
-$panelCaptionOthers: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999);
+$panelCaptionOthers: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999) !default;
 //--------------------------------------------------------------------------------------
 //.panel .panel-heading变量
 ///.panel-heading 外边距
 ///@type map
 ///
 ///
-$panelHeadingPaddings: 10px 15px 0px 15px;
+$panelHeadingPaddings: 10px 15px 0px 15px !default;
 ///
 ///.panel-heading 底部边框,默认1px,transparent
 ///@type string
 ///
 ///
-$panelHeadingBorderBottom: 1px solid transparent;
+$panelHeadingBorderBottom: 1px solid transparent !default;
 
 ///
 ///.panel-heading 左上角圆角半径,默认3px
 ///@type number
 ///
 ///
-$panelHeadingTopLeftRadius: 3px;
+$panelHeadingTopLeftRadius: 3px !default;
 
 ///
 ///.panel-heading 右上角圆角半径,默认3px
 ///@type number
 ///
 ///
-$panelHeadingTopRightRadius: 3px;
+$panelHeadingTopRightRadius: 3px !default;
 ///
 ///.panel-body 样式
 ///@type number
 ///
 ///
-$panelBody: ((margin: 0px auto),(padding-bottom:20px),(text-align: center));
+$panelBody: ((margin: 0px auto),(padding-bottom:20px),(text-align: center)) !default;
 ///
 ///.panel tools 样式
 ///@type number
 ///
 ///
-$panelTools: (float: right,display: inline-block);
+$panelTools: (float: right,display: inline-block) !default;
 ///
 ///.panel tools btn样式
 ///@type number
 ///
 ///
-$panelToolsBtn: (position: relative, border: 0 none, font-size: 18px, line-height: 18px, height: 18px, padding: 0, background-color: #fff);
+$panelToolsBtn: (position: relative, border: 0 none, font-size: 18px, line-height: 18px, height: 18px, padding: 0, background-color: #fff) !default;
 ///
 ///.panel tools angle样式
 ///@type number
 ///
 ///
-$panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, line-height: 16px, position: relative);
+$panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, line-height: 16px, position: relative) !default;
 
 
 .panel {
