@@ -56,8 +56,11 @@ $panelOthers: ();
 ///@type map
 ///
 $panelIcons: (left: 4px,position: absolute,top: 3px,color: #fff);
-
-$panelBoxShadow: 0 1px 1px rgba(0,0,0,.05);
+///
+///panel box-shadow属性，默认0 1px 1px rgba(0,0,0,.05)
+///@type string
+///
+$panelBoxShadow: 0 1px 1px rgba(0,0,0,.05) !default;
 // -webkit-box-shadow: ;
 // box-shadow: 0 1px 1px rgba(0,0,0,.05);),
 
@@ -129,10 +132,10 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
         border:$panelBorder;
         border-radius: $panelBorderRadius;
         background: $panelBackground;
-        @include comp_common_margins($panelMargins);
-        @include comp_common_paddings($panelPaddings);
-        @include comp_common_boxShadow($panelBoxShadow);
-        @include comp_common_MapMulStyles($panelOthers);
+        @include mixin_margins($panelMargins);
+        @include mixin_paddings($panelPaddings);
+        @include mixin_boxShadow($panelBoxShadow);
+        @include mixin_MapMulStyles($panelOthers);
       }
     
     
@@ -144,29 +147,29 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     }
     
     .panel-heading .corner > i.fa {
-        @include comp_common_MapMulStyles($panelIcons);
+        @include mixin_MapMulStyles($panelIcons);
     }
     
     .panel-heading .tools {
-        @include comp_common_MapMulStyles($panelTools);
+        @include mixin_MapMulStyles($panelTools);
         height:30px
     }
     .panel-heading .caption
     {
-        @include comp_common_MapMulStyles($panelCaptionFonts);
-        @include comp_common_MapMulStyles($panelCaptionOthers);
+        @include mixin_MapMulStyles($panelCaptionFonts);
+        @include mixin_MapMulStyles($panelCaptionOthers);
     }
-    @include comp_common_listMaps(".panel .panel-body",$panelBody);
+    @include mixin_listMaps(".panel .panel-body",$panelBody);
     
     .panel-heading .tools .btn-icon {
-        @include comp_common_MapMulStyles($panelToolsBtn);
+        @include mixin_MapMulStyles($panelToolsBtn);
     }
     
     .panel-heading .tools > a, .panel-heading .tools > .btn, .panel-heading .tools > .btn-group {
         margin-left: 15px;
     }
     .panel-heading .tools .fa-angle-up, .panel-heading .tools .fa-angle-down {
-      @include comp_common_MapMulStyles($panelToolsAngle);
+      @include mixin_MapMulStyles($panelToolsAngle);
       margin-top: -3px;
     }
     .panel-heading .tools .fa-download {

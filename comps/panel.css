@@ -1,9 +1,10 @@
-/* line 125, panel.scss */
+/* line 129, panel.scss */
 .panel {
   color: #333333;
   position: relative;
   border: 1px solid #eeeeee;
   border-radius: 0;
+  background: transparent;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -13,24 +14,24 @@
   padding-left: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
-/* line 137, panel.scss */
+/* line 142, panel.scss */
 .panel .panel-heading {
   border-bottom: 1px solid transparent;
   padding: 10px 15px 0px 15px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
-/* line 144, panel.scss */
+/* line 149, panel.scss */
 .panel .panel-heading .corner > i.fa {
   left: 4px;
   position: absolute;
   top: 3px;
   color: #fff; }
-/* line 148, panel.scss */
+/* line 153, panel.scss */
 .panel .panel-heading .tools {
   float: right;
   display: inline-block;
   height: 30px; }
-/* line 152, panel.scss */
+/* line 157, panel.scss */
 .panel .panel-heading .caption {
   font-size: 16px;
   font-weight: bold;
@@ -39,12 +40,12 @@
   float: left;
   display: inline-block;
   color: #999; }
-/* line 69, mixins.scss */
+/* line 66, mixins.scss */
 .panel .panel .panel-body {
   margin: 0px auto;
   padding-bottom: 20px;
   text-align: center; }
-/* line 159, panel.scss */
+/* line 164, panel.scss */
 .panel .panel-heading .tools .btn-icon {
   position: relative;
   border: 0 none;
@@ -53,10 +54,10 @@
   height: 18px;
   padding: 0;
   background-color: #fff; }
-/* line 163, panel.scss */
+/* line 168, panel.scss */
 .panel .panel-heading .tools > a, .panel .panel-heading .tools > .btn, .panel .panel-heading .tools > .btn-group {
   margin-left: 15px; }
-/* line 166, panel.scss */
+/* line 171, panel.scss */
 .panel .panel-heading .tools .fa-angle-up, .panel .panel-heading .tools .fa-angle-down {
   font-size: 25px;
   margin-top: 6px;
@@ -65,9 +66,9 @@
   line-height: 16px;
   position: relative;
   margin-top: -3px; }
-/* line 170, panel.scss */
+/* line 175, panel.scss */
 .panel .panel-heading .tools .fa-download {
   color: #666; }
-/* line 173, panel.scss */
+/* line 178, panel.scss */
 .panel .panel-heading .corner {
   width: 15px; }

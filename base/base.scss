@@ -12,22 +12,6 @@ $baseFontSize: 14px;
 $baseFontFamily: "Microsoft YaHei","微软雅黑",Helvetica,sans-serif;
 //----------------------------------------- 字体 end -----------------------------------------
 
-///box-sizing为border-box
-///@example @include base_border_box();
-@mixin base_border_box()
-{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-//-------------------------------   
-//box-shadow可以有多组值，所以在变量参数后面添加...
-@mixin base_box-shadow($shadow...) {
-  -webkit-box-shadow:$shadow;
-  box-shadow:$shadow;
-}
-
 body
 {
     font-size: $baseFontSize;

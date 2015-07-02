@@ -14,7 +14,7 @@ $cardFontColor:#ff0;
 		
 		.card
 		{
-			@include base_box-shadow(0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3));
+			@include mixin_boxShadow(0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3),0 1px 1px rgba(0,0,0,.3));
 			//border: 1px solid transparent;
 			//border-radius: 4px;
 		}

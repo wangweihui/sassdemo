@@ -1,22 +1,19 @@
 @charset "UTF-8";
 ////
 /// Description组件公共属性和方法
-/// @group comps.comps_common
+/// @group comps.mixins
 /// @author wangweihui
 ///
 /// 
 /// 
 /// 
 
-///内容颜色,默认为白色 #fff
-///@type Uint
-$compCommonColor: #fff;
 ///设置外边距，默认都为0
 ///@parameter compCommonMarginsParam  按顺时针四个外边距的值   类型：map  默认值：(top:0,right:0,bottom:0,left:0)
-///@example @include comp_common_margins();默认，即外边距都为0
-///@example @include comp_common_margins((top: 10px,right: 10px,bottom: 20px,left: 5px));四个外边距都进行数值设置
-///@example @include comp_common_margins((top: 10px,bottom: 20px,left: 5px));只设置其中几个外边距，其余未设置默认为0
-@mixin comp_common_margins($compCommonMarginsParam:(top: 0,right: 0,bottom: 0,left: 0))
+///@example @include mixin_margins();默认，即外边距都为0
+///@example @include mixin_margins((top: 10px,right: 10px,bottom: 20px,left: 5px));四个外边距都进行数值设置
+///@example @include mixin_margins((top: 10px,bottom: 20px,left: 5px));只设置其中几个外边距，其余未设置默认为0
+@mixin mixin_margins($compCommonMarginsParam:(top: 0,right: 0,bottom: 0,left: 0))
 {
     @each $marginPosition,$marginValue in $compCommonMarginsParam
     {
@@ -25,10 +22,10 @@ $compCommonColor: #fff;
 }
 ///设置内边距，默认都为0
 ///@parameter $compCommonPaddingsParam 按顺时针四个内边距的值 类型：map  默认值：(top:0,right:0,bottom:0,left:0)
-///@example @include comp_common_paddings();默认，即内边距都为0
-///@example @include comp_common_paddings((top: 10px,right: 10px,bottom: 20px,left: 5px));四个内边距都进行数值设置
-///@example @include comp_common_paddings((top: 10px,bottom: 20px,left: 5px));只设置其中几个内边距，其余未设置默认为0
-@mixin comp_common_paddings($compCommonPaddingsParam:(top: 0,right: 0,bottom: 0,left: 0))
+///@example @include mixin_paddings();默认，即内边距都为0
+///@example @include mixin_paddings((top: 10px,right: 10px,bottom: 20px,left: 5px));四个内边距都进行数值设置
+///@example @include mixin_paddings((top: 10px,bottom: 20px,left: 5px));只设置其中几个内边距，其余未设置默认为0
+@mixin mixin_paddings($compCommonPaddingsParam:(top: 0,right: 0,bottom: 0,left: 0))
 {
     @each $paddingPosition,$paddingValue in $compCommonPaddingsParam
     {
@@ -40,9 +37,9 @@ $compCommonColor: #fff;
 ///给选择器设置N个属性值，length($compCommonParam) >1 
 ///@parameter $preselector CSS选择器前缀，最终生成选择器+index索引的选择器
 ///@parameter $compCommonParam list&lt;map&lt;string,string&gt;&gt;格式的列表
-///@example @include comp_common_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));给.panel_1,.panel_2设置背景颜色
+///@example @include mixin_list(".panel_",((background:rgba(3,54,97,0.65)), (background:rgba(0,0,0,0.6))));给.panel_1,.panel_2设置背景颜色
 ///
-@mixin comp_common_list($preselector,$compCommonParam)
+@mixin mixin_list($preselector,$compCommonParam)
 {
     $num: length($compCommonParam);
     @for $index from 1 through $num
@@ -62,9 +59,9 @@ $compCommonColor: #fff;
 ///给选择器设置N个属性值
 ///@parameter $selector CSS选择器，
 ///@parameter $compCommonParam list&lt;map&lt;string,string&gt;&gt;格式的列表
-///@example @include comp_common_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
+///@example @include mixin_Maps(".text",((font-size: 14px),(margin: 19px  6px)));
 ///
-@mixin comp_common_listMaps($selector,$compCommonParam)
+@mixin mixin_listMaps($selector,$compCommonParam)
 {
      #{$selector}
      {
@@ -81,12 +78,12 @@ $compCommonColor: #fff;
     }
 }
 ///
-///给选择器设置单个MAP 多个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
+///给选择器设置单个MAP 多个属性值，弥补@mixin mixin_list和@mixin mixin_Maps属性值必须多余1个的限制
 ///@parameter $selector CSS选择器，
 ///@parameter $attrMap map&lt;string,string&gt;格式的map
-///@example @include comp_common_MapAttr("table tr",(height: 40px));
+///@example @include mixin_MapAttr("table tr",(height: 40px));
 ///
-@mixin comp_common_MapAttr($selector,$attrMap)
+@mixin mixin_MapAttr($selector,$attrMap)
 {
     #{$selector}
     {
@@ -99,22 +96,33 @@ $compCommonColor: #fff;
 ///
 ///给选择器boxShadow
 ///@parameter $shadow;格式的string
-///@example @include comp_common_boxShadow(0 1px 1px rgba(0,0,0,.05));
+///@example @include mixin_boxShadow(0 1px 1px rgba(0,0,0,.05));
 ///
-@mixin comp_common_boxShadow($shadow...) {
+@mixin mixin_boxShadow($shadow...) {
   -webkit-box-shadow:$shadow;
   box-shadow:$shadow;
 }
 ///
-///给选择器设置单个MAP 多个属性值，弥补@mixin comp_common_list和@mixin comp_common_Maps属性值必须多余1个的限制
+///给选择器设置单个MAP 多个属性值，弥补@mixin mixin_list和@mixin mixin_Maps属性值必须多余1个的限制
 ///@parameter $selector CSS选择器，
 ///@parameter $attrMap map&lt;string,string&gt;格式的map
-///@example @include comp_common_MapAttr("table tr",(height: 40px));
+///@example @include mixin_MapAttr("table tr",(height: 40px));
 ///
-@mixin comp_common_MapMulStyles($attrMap)
+@mixin mixin_MapMulStyles($attrMap)
 {
     @each $cssAttr,$cssValue in $attrMap
     {
             #{$cssAttr}:$cssValue;
     }
 }
+
+///box-sizing为border-box
+///@example @include base_border_box();
+@mixin mixin_border_box()
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+

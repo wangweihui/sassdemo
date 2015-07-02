@@ -58,24 +58,24 @@ $cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center);
     {
         background: $cardBackground;
         color: $cardFontColor;
-        @include comp_common_MapMulStyles($cardMargins);
-        @include comp_common_MapMulStyles($cardPaddings);
-        @include comp_common_MapMulStyles($cardOthers);
+        @include mixin_MapMulStyles($cardMargins);
+        @include mixin_MapMulStyles($cardPaddings);
+        @include mixin_MapMulStyles($cardOthers);
      }
     .card-heading
     {
-        @include comp_common_MapMulStyles($cardHeadingPaddings);
+        @include mixin_MapMulStyles($cardHeadingPaddings);
     }
     .card-heading .card-caption
     {
-        @include comp_common_MapMulStyles($cardCaptionStyles);
+        @include mixin_MapMulStyles($cardCaptionStyles);
     }
     .card-heading .card-subcaption
     {
-        @include comp_common_MapMulStyles($cardSubcaptionStyles);
+        @include mixin_MapMulStyles($cardSubcaptionStyles);
     }
     .card-heading .card-body
     {
-        @include comp_common_MapMulStyles($cardBodyStyles);
+        @include mixin_MapMulStyles($cardBodyStyles);
     }
 }
