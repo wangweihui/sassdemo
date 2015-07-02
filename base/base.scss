@@ -7,9 +7,9 @@
 
 //----------------------------------------- 字体 start ---------------------------------------
 //默认字体大小
-$baseFontSize: 14px;
+$baseFontSize: 14px !default;
 //默认字体家族
-$baseFontFamily: "Microsoft YaHei","微软雅黑",Helvetica,sans-serif;
+$baseFontFamily: "Microsoft YaHei","微软雅黑",Helvetica,sans-serif !default;
 //----------------------------------------- 字体 end -----------------------------------------
 
 body
