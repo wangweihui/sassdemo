@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* line 3, ../Base/reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
@@ -21,7 +20,8 @@ time, mark, audio, video, svg, hr {
   vertical-align: baseline;
   font-weight: normal; }
 
-/* line 25, ../Base/base.scss */
 body {
   font-size: 14px;
   font-family: "Microsoft YaHei", "微软雅黑", Helvetica, sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
