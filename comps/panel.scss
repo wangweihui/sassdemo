@@ -14,19 +14,29 @@
 ///panel高度,默认为500px
 ///@type Number
 ///
-$panelHeight: 510px;
+///
 ///panel内容颜色,默认为#333333
 ///@type uint
 ///
-$panelColor: #333333;
-///panel最大宽度,默认为360px
-///@type Number
+$panelColor: #333333 !default;
+///panel背景颜色,默认透明
+///@type String
 ///
-$panelMax-width: 360px;
+$panelBackground:transparent !default;
+///
 ///panel布局,默认为relative
 ///@type string
 ///
-$panelPosition: relative;
+$panelPosition: relative !default;
+///
+///panel边框，默认1px solid #eeeeee;
+///@type string
+///
+$panelBorder:1px solid #eeeeee !default;
+///
+///panel边框圆角，默认0;
+///
+$panelBorderRadius:0 !default;
 
 ///panel外边距,默认为(top: 50px,right: auto,left: auto)
 ///@type string
@@ -40,7 +50,7 @@ $panelPaddings: (top: 0,right: 0,bottom: 0,left: 0);
 ///panel其他样式
 ///@type string
 ///
-$panelOthers: (background-color: #fff,border: 1px solid transparent,border-radius: 4px);
+$panelOthers: ();
 ///
 ///panel左边icon的样式
 ///@type map
@@ -116,11 +126,13 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     &{
         color: $panelColor;
         position: $panelPosition;
+        border:$panelBorder;
+        border-radius: $panelBorderRadius;
+        background: $panelBackground;
         @include comp_common_margins($panelMargins);
         @include comp_common_paddings($panelPaddings);
         @include comp_common_boxShadow($panelBoxShadow);
         @include comp_common_MapMulStyles($panelOthers);
-        border:1px solid #eeeeee;
       }
     
     
