@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>panel</title>
+		<link rel="stylesheet" type="text/css" href="../vendors/font-awesome.css"/>
 		<link rel="stylesheet" type="text/css" href="../vendors/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../Comps/corner.css" />
 		<link rel="stylesheet" type="text/css" href="panel_ custom.css"/>
@@ -33,9 +34,12 @@
 								<li>
 									.panel-heading标题区域
 									<ul>
-										<li>.caption主标题，居左</li>
-										<li>.tools工具区域，居右，内可添加自定义控件</li>
+										<li>.caption主标题，居左，默认样式:(font-size:16px,font-weight:bold)，变量$panelCaptionFonts，可覆盖；</li>
+										<li>.tools工具区域，居右，内可添加自定义控件，默认高度30px，变量$panelToolsHeight，可覆盖；</li>
 									</ul>
+								</li>
+								<li>
+									.panel-body内容区域，高度随内容而变；
 								</li>
 							</ul>
 						</div>
@@ -44,7 +48,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="panel">
 						<div class="panel-heading clearfix">
-							<div class="corner corner-right-bottom corner-orange">
+							<div class="corner corner-right-top corner-orange">
 								<i class="fa fa-info-circle"></i>
 							</div>
 							<div class="caption">
@@ -71,7 +75,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="panel">
 						<div class="panel-heading clearfix">
-							<div class="corner corner-left-top corner-blue corner blue2">
+							<div class="corner corner-left-bottom corner-teal corner">
 								<i class="fa fa-info-circle"></i>
 							</div>
 							<div class="caption">
@@ -83,9 +87,17 @@
 							</div>
 						</div>
 						<div class="panel-body">
-							<p>内容区域</p>
 							<ul>
-								<li></li>
+								<li>corner.scss提供了四种三角形角标，分别为：
+									<ul>
+										<li>.corner .corner-left-top左上角；</li>
+										<li>.corner .corner-left-bottom左下角；</li>
+										<li>.corner .corner-right-top右上角；</li>
+										<li>.corner .corner-right-bottom右下角；</li>
+									</ul>
+								</li>
+								<li>.corner相对父元素绝对布局，分别位于父容器panel四个角，父容器panel默认为relative布局；</li>
+								<li>.corner默认高度和宽度为35px，变量$cornerWidthAndHeight，可覆盖；</li>
 							</ul>
 						</div>
 					</div>
@@ -93,7 +105,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="panel">
 						<div class="panel-heading clearfix">
-							<div class="corner corner-left-top corner-blue corner blue2">
+							<div class="corner corner-right-bottom corner-blue corner blue2">
 								<i class="fa fa-info-circle"></i>
 							</div>
 							<div class="caption">

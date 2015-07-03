@@ -112,6 +112,10 @@ $panelBody: ((margin: 0px auto),(padding-bottom:20px),(text-align: center)) !def
 ///
 $panelTools: (float: right,display: inline-block) !default;
 ///
+///.panel .tools高度，默认30px
+///
+$panelToolsHeight: 30px !default;
+///
 ///.panel tools btn样式
 ///@type number
 ///
@@ -152,7 +156,7 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     
     .panel-heading .tools {
         @include mixin_MapMulStyles($panelTools);
-        height:30px
+        height:$panelToolsHeight;
     }
     .panel-heading .caption
     {
@@ -175,9 +179,9 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     .panel-heading .tools .fa-download {
         color: #666;
     }
-    .panel-heading .corner {
-      width: 15px;
-    }
+//  .panel-heading .corner {
+//    //width: 15px;
+//  }
 }
 
 

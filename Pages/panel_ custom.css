@@ -1,9 +1,11 @@
 @charset "UTF-8";
 @import url("../Themes/color.css");
+/* line 15, ../Base/base.scss */
 body {
   font-size: 14px;
   font-family: "Microsoft YaHei", "微软雅黑", Helvetica, sans-serif; }
 
+/* line 133, ../Comps/panel.scss */
 .panel {
   color: #424242;
   position: relative;
@@ -19,20 +21,24 @@ body {
   padding-left: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+/* line 146, ../Comps/panel.scss */
 .panel .panel-heading {
   border-bottom: 1px solid transparent;
   padding: 10px 15px 0px 15px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
+/* line 153, ../Comps/panel.scss */
 .panel .panel-heading .corner > i.fa {
   left: 4px;
   position: absolute;
   top: 3px;
   color: #fff; }
+/* line 157, ../Comps/panel.scss */
 .panel .panel-heading .tools {
   float: right;
   display: inline-block;
   height: 30px; }
+/* line 161, ../Comps/panel.scss */
 .panel .panel-heading .caption {
   font-size: 16px;
   font-weight: bold;
@@ -41,10 +47,12 @@ body {
   float: left;
   display: inline-block;
   color: #999; }
+/* line 66, ../Comps/mixins.scss */
 .panel .panel .panel-body {
   margin: 0px auto;
   padding-bottom: 20px;
   text-align: center; }
+/* line 168, ../Comps/panel.scss */
 .panel .panel-heading .tools .btn-icon {
   position: relative;
   border: 0 none;
@@ -53,8 +61,10 @@ body {
   height: 18px;
   padding: 0;
   background-color: #fff; }
+/* line 172, ../Comps/panel.scss */
 .panel .panel-heading .tools > a, .panel .panel-heading .tools > .btn, .panel .panel-heading .tools > .btn-group {
   margin-left: 15px; }
+/* line 175, ../Comps/panel.scss */
 .panel .panel-heading .tools .fa-angle-up, .panel .panel-heading .tools .fa-angle-down {
   font-size: 25px;
   margin-top: 6px;
@@ -63,7 +73,6 @@ body {
   line-height: 16px;
   position: relative;
   margin-top: -3px; }
+/* line 179, ../Comps/panel.scss */
 .panel .panel-heading .tools .fa-download {
   color: #666; }
-.panel .panel-heading .corner {
-  width: 15px; }
