@@ -1,14 +1,30 @@
-什么是sass
+
 
 Sass干嘛的
 
-有啥好处
+有啥好处@import XX.scss和@import XX.css的区别
 
 怎么用
 
 怎么加入项目
 
-怎么编译
+什么是sass
+类比 .java .class
 
-变量什么的---语法
+好处 样式的组件化、模块化
+演示
 
+环境安装 
+ruby x64 appcan默认安装ruby ruby -v 环境变量
+
+怎么编译 
+SASS命令编译  vs插件 界面koala 演示sassmeister
+
+变量什么的---语法 变量$ @mixin @extend function @if @each 
+
+文档sassdoc 安装和命令、书写规范
+
+
+
+
+github上sassdemo 下载 zip 或者git下来 基本git命令 工具sourcetree，配置ssh
