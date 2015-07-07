@@ -1,9 +1,12 @@
 ﻿@charset "UTF-8";
 
-///Description组件table样式
+////
+/// Description组件table公共属性和方法
 /// @group comps.table
 /// @author wangweihui
 ///
+///
+
 ///在table标签添加class = "table"
 ///需要透明和灰色隔行背景色的，添加类striped
 ///table默认文字居中text-align:center;border:none;需改变的可自行覆盖
