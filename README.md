@@ -1,5 +1,7 @@
 # sassdemo
 目录层次
+
+```
 sass/ 
 | 
 |– base/ 
@@ -47,3 +49,4 @@ sass/
 | 
 | 
 `– main.scss             # primary Sass file 
+```
