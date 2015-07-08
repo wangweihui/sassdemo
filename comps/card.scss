@@ -9,55 +9,75 @@
 ///
 
 ///
-///panel内容颜色,默认为白色#333333
+///.card内容颜色,默认为白色#333333
 ///@type uint
 ///
 $cardFontColor: #fff !default;
 
 ///
-///panel背景,默认为透明
+///.card背景,默认为透明
 ///@type uint
 ///
 $cardBackground: transparent !default;
 
-///card外边距,默认为(top: 50px,right: auto,left: auto)
+///.card外边距,默认为(top: 50px,right: auto,left: auto)
 ///@type map
 ///
 $cardMargins: (margin:20px auto 0 auto) !default;
 
-///card内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
+///.card内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
 ///@type map
 ///
 $cardPaddings: (padding:0) !default;
-///card其他样式
+///
+///.card position
+///
+$cardPosition: relative !default;
+///.card其他样式,用于扩展覆盖
 ///@type map
 ///
-$cardOthers: (position: relative) !default;
-///card-heading样式
+$cardOthers: () !default;
+///
+///.card .card-heading样式
 ///@type map
 ///
 $cardHeadingPaddings: (padding:8px 10px 2px 10px) !default;
-///card-Caption样式
+///
+///.card .card-heading 其他样式，用于扩展覆盖
+///
+$cardHeadingOthers: () !default;
+///.card .card-heading .card-caption样式
 ///@type map
 ///
 $cardCaptionStyles: (font-size: 23px, margin-top: 4px) !default;
-//font-weight: bold, 
-///card sub-Caption样式
+///
+///.card .card-heading .card-caption其他样式
+///
+$cardCaptionOthers: () !default;
+//
+///.card-heading .card-subcaption样式
 ///@type map
 ///
 $cardSubcaptionStyles: (font-size: 14px, float: right) !default;
-///card-body样式
+///
+///.card-heading .card-subcaption其他样式，用于扩展覆盖
+///
+$cardSubcaptionOthers: () !default;
+///.card-heading .card-body样式
 ///@type map
 ///
 $cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center) !default;
-
-
+///
+///.card-heading .card-body样式其他样式
+///
+$cardBodyOthers: ()!default;
 .card
 {
     &
     {
         background: $cardBackground;
         color: $cardFontColor;
+        position: $cardPosition;
         @include mixin_MapMulStyles($cardMargins);
         @include mixin_MapMulStyles($cardPaddings);
         @include mixin_MapMulStyles($cardOthers);
@@ -65,17 +85,21 @@ $cardBodyStyles: (margin: 0px auto, padding-bottom: 20px, text-align: center) !d
     .card-heading
     {
         @include mixin_MapMulStyles($cardHeadingPaddings);
+        @include mixin_MapMulStyles($cardHeadingOthers);
     }
     .card-heading .card-caption
     {
         @include mixin_MapMulStyles($cardCaptionStyles);
+        @include mixin_MapMulStyles($cardCaptionOthers);
     }
     .card-heading .card-subcaption
     {
         @include mixin_MapMulStyles($cardSubcaptionStyles);
+        @include mixin_MapMulStyles($cardSubcaptionOthers);
     }
     .card-heading .card-body
     {
         @include mixin_MapMulStyles($cardBodyStyles);
+        @include mixin_MapMulStyles($cardBodyOthers);
     }
 }

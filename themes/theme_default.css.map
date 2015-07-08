@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAOA,IACA;EACI,KAAK,EANU,OAAO;EAOtB,gBAAgB,EALK,IAAI",
-"sources": ["theme_default.scss"],
-"names": [],
-"file": "theme_default.css"
-}

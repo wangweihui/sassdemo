@@ -5,8 +5,17 @@ $defaultFontColor: #808080;
 //默认背景颜色
 $defaultBackgroundColor: #fff;
 
+@import "../Base/base.scss";
+@import "../Comps/panel.scss";
+@import "../Comps/corner.scss";
+@import "../Comps/card.scss";
 body
 {
     color: $defaultFontColor;
     background-color: $defaultBackgroundColor;
+}
+/////////////////覆盖jqueryui内置样式//////////
+.ui-widget-content {
+  border: 0;
+  background: transparent;
 }

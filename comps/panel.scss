@@ -1,8 +1,6 @@
 ﻿@charset "UTF-8";
 @import "mixins.scss";
 
-
-
 ////
 /// Description组件panel公共属性和方法
 /// @group comps.panel
@@ -10,101 +8,109 @@
 ///
 ///
 
-
-///panel高度,默认为500px
-///@type Number
 ///
-///
-///panel内容颜色,默认为#333333
+///.panel内容颜色,默认为#333333
 ///@type uint
 ///
 $panelColor: #333333 !default;
-///panel背景颜色,默认透明
+///.panel背景颜色,默认透明
 ///@type String
 ///
 $panelBackground:transparent !default;
 ///
-///panel布局,默认为relative
+///.panel布局,默认为relative
 ///@type string
 ///
 $panelPosition: relative !default;
 ///
-///panel边框，默认1px solid #eeeeee;
+///.panel边框，默认1px solid #eeeeee;
 ///@type string
 ///
 $panelBorder:1px solid #eeeeee !default;
 ///
-///panel边框圆角，默认0;
+///.panel边框圆角，默认0;
 ///
 $panelBorderRadius:0 !default;
 
-///panel外边距,默认为(top: 50px,right: auto,left: auto)
-///@type string
+///.panel外边距,默认为(top: 50px,right: auto,left: auto)
+///@type map
 ///
 $panelMargins: (top:0,right: 0,left: 0) !default;
 
-///panel内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
-///@type string
+///.panel内边距,默认为(top: 0,right: 10px,bottom: 0,left: 10px)
+///@type map
 ///
 $panelPaddings: (top: 0,right: 0,bottom: 0,left: 0) !default;
-///panel其他样式
-///@type string
+///.panel其他样式
+///@type map
 ///
 $panelOthers: () !default;
 ///
-///panel左边icon的样式
+///.panel左边icon的样式
 ///@type map
 ///
 $panelIcons: (left: 4px,position: absolute,top: 3px,color: #fff) !default;
 ///
-///panel box-shadow属性，默认0 1px 1px rgba(0,0,0,.05)
+///.panel box-shadow属性，默认0 1px 1px rgba(0,0,0,.05)
 ///@type string
 ///
 $panelBoxShadow: 0 1px 1px rgba(0,0,0,.05) !default;
-// -webkit-box-shadow: ;
-// box-shadow: 0 1px 1px rgba(0,0,0,.05);),
 
-///panel-title 字体样式
-///@type list
+///.panel-heading .caption字体样式
+///@type map
 ///
 $panelCaptionFonts: (font-size:16px,font-weight:bold) !default;
-///panel-title 其他属性，默认margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999
+///.panel-heading .caption属性，默认margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999
 ///@type list
 ///
-$panelCaptionOthers: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999) !default;
+$panelCaptionStyles: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #999) !default;
+///
+///.panel .panel-heading .caption其他样式，用于扩展覆盖
+///
+$panelCaptionOthers: () !default;
 //--------------------------------------------------------------------------------------
 //.panel .panel-heading变量
 ///.panel-heading 外边距
-///@type map
+///@type string
 ///
 ///
 $panelHeadingPaddings: 10px 15px 0px 15px !default;
 ///
-///.panel-heading 底部边框,默认1px,transparent
+///.panel .panel-heading底部边框,默认1px,transparent
 ///@type string
 ///
 ///
 $panelHeadingBorderBottom: 1px solid transparent !default;
 
 ///
-///.panel-heading 左上角圆角半径,默认3px
+///.panel .panel-heading 左上角圆角半径,默认3px
 ///@type number
 ///
 ///
 $panelHeadingTopLeftRadius: 3px !default;
 
 ///
-///.panel-heading 右上角圆角半径,默认3px
+///.panel .panel-heading右上角圆角半径,默认3px
 ///@type number
 ///
 ///
 $panelHeadingTopRightRadius: 3px !default;
 ///
-///.panel-body 样式
-///@type number
+///.panel .panel-heading其他样式，用于扩展覆盖
+///
+$panelHeadingOthers: () !default;
+///
+///.panel .panel-body样式
+///@type map
 ///
 ///
-$panelBody: ((margin: 0px auto),(padding-bottom:20px),(text-align: center)) !default;
+$panelBody: (margin: 0px auto,padding-bottom:20px,text-align: center) !default;
+///
+///.panel .panel-body其他样式，用于扩展覆盖
+///@type map
+///
+$panelBodyOthers: () !default;
+
 ///
 ///.panel tools 样式
 ///@type number
@@ -148,6 +154,7 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
         padding: $panelHeadingPaddings;
         border-top-left-radius: $panelHeadingTopLeftRadius;
         border-top-right-radius: $panelHeadingTopRightRadius;
+        @include mixin_MapMulStyles($panelHeadingOthers);
     }
     
     .panel-heading .corner > i.fa {
@@ -161,9 +168,14 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     .panel-heading .caption
     {
         @include mixin_MapMulStyles($panelCaptionFonts);
+        @include mixin_MapMulStyles($panelCaptionStyles);
         @include mixin_MapMulStyles($panelCaptionOthers);
     }
-    @include mixin_listMaps(".panel .panel-body",$panelBody);
+    .panel .panel-body
+    {
+        @include mixin_MapMulStyles($panelBody);
+        @include mixin_MapMulStyles($panelBodyOthers);
+    }
     
     .panel-heading .tools .btn-icon {
         @include mixin_MapMulStyles($panelToolsBtn);
