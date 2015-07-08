@@ -19,7 +19,9 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: 0; }
 /* line 158, ../Comps/panel.scss */
 .panel .panel-heading {
   border-bottom: 1px solid transparent;
@@ -206,26 +208,26 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
-/* line 24, theme_smg.scss */
+/* line 25, theme_smg.scss */
 body {
   color: #808080;
   background-color: rgba(0, 0, 0, 0.2); }
 
-/* line 30, theme_smg.scss */
+/* line 31, theme_smg.scss */
 .ui-widget-content {
   border: 0;
   background: transparent; }
 
 /*-----------------------------------common start------------------------*/
-/* line 35, theme_smg.scss */
+/* line 36, theme_smg.scss */
 .titleSection {
   text-align: center; }
 
-/* line 39, theme_smg.scss */
+/* line 40, theme_smg.scss */
 .titleSection h2 {
   display: inline-block; }
 
-/* line 43, theme_smg.scss */
+/* line 44, theme_smg.scss */
 .titleSection input {
   line-height: 30px; }
 
