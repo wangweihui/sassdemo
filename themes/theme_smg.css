@@ -6,11 +6,11 @@ body {
 
 /* line 145, ../Comps/panel.scss */
 .panel {
-  color: #333333;
+  color: #fff;
   position: relative;
   border: 1px solid #eeeeee;
   border-radius: 0;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.2);
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -45,7 +45,8 @@ body {
   margin-right: 15px;
   float: left;
   display: inline-block;
-  color: #999; }
+  color: #999;
+  color: #fff; }
 /* line 181, ../Comps/panel.scss */
 .panel .panel .panel-body {
   margin: 0px auto;
@@ -182,7 +183,7 @@ body {
 
 /* line 76, ../Comps/card.scss */
 .card {
-  background: #a65100;
+  background: rgba(0, 0, 0, 0.2);
   color: #fff;
   position: relative;
   margin: 20px auto 0 auto;
@@ -205,26 +206,26 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
-/* line 19, theme_default.scss */
+/* line 24, theme_smg.scss */
 body {
   color: #808080;
-  background-color: #fff; }
+  background-color: rgba(0, 0, 0, 0.2); }
 
-/* line 25, theme_default.scss */
+/* line 30, theme_smg.scss */
 .ui-widget-content {
   border: 0;
   background: transparent; }
 
 /*-----------------------------------common start------------------------*/
-/* line 30, theme_default.scss */
+/* line 35, theme_smg.scss */
 .titleSection {
   text-align: center; }
 
-/* line 34, theme_default.scss */
+/* line 39, theme_smg.scss */
 .titleSection h2 {
   display: inline-block; }
 
-/* line 38, theme_default.scss */
+/* line 43, theme_smg.scss */
 .titleSection input {
   line-height: 30px; }
 

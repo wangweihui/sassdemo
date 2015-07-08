@@ -9,11 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="Themes/color.css"/>
 		
 		<link href="http://cdn.bootcss.com/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="/Themes/theme_default.css" />
+		<link rel="stylesheet" type="text/css" href="/Themes/theme_smg.css" />
 	</head>
 
 	<body>
-		<p>演示</p>
+		<section class="titleSection"><h2>演示</h2><input id="switchBtn" type="button" value="切换"/></section>
 		<div id="accordion">
 			<h3>card</h3>
 			<div id="card">
@@ -29,11 +29,21 @@
 		<script type="text/javascript">
 			$(function()
 			{
+				var cssLink = null;
+				var cssIndex = 0;
+				var cssFiles = ['/Themes/theme_smg.css','/Themes/theme_default.css'];
 				$( "#accordion" ).accordion({
 			      heightStyle: "content"
 			    });
 			    $('#card').load('/Pages/card.html');
 			    $('#panel').load('/Pages/panel&corner.html');
+			    $('#switchBtn').on('click',function(){
+			    	cssLink = $('head link:last-child');
+			    	
+			    	cssLink.attr('href',cssFiles[1-cssIndex]);
+			    	
+			    	cssIndex = 1-cssIndex;
+			    });
 			});
 		</script>
 	</body>

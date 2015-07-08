@@ -3,12 +3,17 @@
 //默认字体颜色
 $defaultFontColor: #808080;
 //默认背景颜色
-$defaultBackgroundColor: #fff;
+$defaultBackgroundColor: rgba(#000,.2);
 
-//--------------------------card------------------
-$cardBackground:#a65100;
+//--------------------------card start ------------------
+$cardBackground:rgba(#000,.2);
 $cardOthers:(box-shadow:(0 1px 1px rgba(0,0,0,.3)));
-//--------------------------card------------------
+//--------------------------card end --------------------
+//--------------------------panel start -----------------
+$panelBackground:rgba(#000,.2);
+$panelColor:#fff;
+$panelCaptionOthers:(color:#fff);
+//--------------------------panel end -------------------
 
 @import "../Comps/mixins.scss";
 @import "../Base/base.scss";
