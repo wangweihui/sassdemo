@@ -97,6 +97,7 @@ $panelHeadingTopLeftRadius: 3px !default;
 $panelHeadingTopRightRadius: 3px !default;
 ///
 ///.panel .panel-heading其他样式，用于扩展覆盖
+///@type map
 ///
 $panelHeadingOthers: () !default;
 ///
@@ -113,7 +114,7 @@ $panelBodyOthers: () !default;
 
 ///
 ///.panel tools 样式
-///@type number
+///@type map
 ///
 ///
 $panelTools: (float: right,display: inline-block) !default;
@@ -122,14 +123,19 @@ $panelTools: (float: right,display: inline-block) !default;
 ///
 $panelToolsHeight: 30px !default;
 ///
+///.panel-heading .tools其他样式，
+///@type map
+///
+$panelToolsOthers: () !default;
+///
 ///.panel tools btn样式
-///@type number
+///@type map
 ///
 ///
 $panelToolsBtn: (position: relative, border: 0 none, font-size: 18px, line-height: 18px, height: 18px, padding: 0, background-color: #fff) !default;
 ///
 ///.panel tools angle样式
-///@type number
+///@type map
 ///
 ///
 $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, line-height: 16px, position: relative) !default;
@@ -164,6 +170,7 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     .panel-heading .tools {
         @include mixin_MapMulStyles($panelTools);
         height:$panelToolsHeight;
+        @include mixin_MapMulStyles($panelToolsOthers);
     }
     .panel-heading .caption
     {
@@ -191,9 +198,7 @@ $panelToolsAngle: (font-size: 25px, margin-top: 6px, color: #999, height: 16px, 
     .panel-heading .tools .fa-download {
         color: #666;
     }
-//  .panel-heading .corner {
-//    //width: 15px;
-//  }
+
 }
 
 
