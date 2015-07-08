@@ -12,7 +12,7 @@
 ///.card内容颜色,默认为白色#333333
 ///@type uint
 ///
-$cardFontColor: #fff !default;
+$cardColor: #fff !default;
 
 ///
 ///.card背景,默认为透明
@@ -76,7 +76,7 @@ $cardBodyOthers: ()!default;
     &
     {
         background: $cardBackground;
-        color: $cardFontColor;
+        color: $cardColor;
         position: $cardPosition;
         @include mixin_MapMulStyles($cardMargins);
         @include mixin_MapMulStyles($cardPaddings);

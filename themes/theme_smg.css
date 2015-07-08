@@ -6,7 +6,7 @@ body {
 
 /* line 145, ../Comps/panel.scss */
 .panel {
-  color: #fff;
+  color: #7b1fa2;
   position: relative;
   border: 1px solid #eeeeee;
   border-radius: 0;
@@ -186,7 +186,7 @@ body {
 /* line 76, ../Comps/card.scss */
 .card {
   background: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #7b1fa2;
   position: relative;
   margin: 20px auto 0 auto;
   padding: 0;
@@ -208,26 +208,26 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
-/* line 25, theme_smg.scss */
+/* line 26, theme_smg.scss */
 body {
   color: #808080;
   background-color: rgba(0, 0, 0, 0.2); }
 
-/* line 31, theme_smg.scss */
+/* line 32, theme_smg.scss */
 .ui-widget-content {
   border: 0;
   background: transparent; }
 
 /*-----------------------------------common start------------------------*/
-/* line 36, theme_smg.scss */
+/* line 37, theme_smg.scss */
 .titleSection {
   text-align: center; }
 
-/* line 40, theme_smg.scss */
+/* line 41, theme_smg.scss */
 .titleSection h2 {
   display: inline-block; }
 
-/* line 44, theme_smg.scss */
+/* line 45, theme_smg.scss */
 .titleSection input {
   line-height: 30px; }
 
