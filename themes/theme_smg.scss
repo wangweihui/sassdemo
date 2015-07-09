@@ -13,7 +13,9 @@ $cardColor:#7b1fa2;
 //--------------------------panel start -----------------
 $panelBackground:rgba(#000,.2);
 $panelColor:#7b1fa2;
-$panelCaptionOthers:(color:#fff);
+$panelCaptionStyles: (margin-left:22px,margin-right:15px,float: left, display: inline-block, color: #fff) !default;
+
+//$panelCaptionOthers:(color:#fff);
 $panelOthers:(border-radius:5px,border:0);
 //--------------------------panel end -------------------
 

@@ -47,7 +47,6 @@ body {
   margin-right: 15px;
   float: left;
   display: inline-block;
-  color: #999;
   color: #fff; }
 /* line 181, ../Comps/panel.scss */
 .panel .panel .panel-body {
@@ -208,26 +207,26 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
-/* line 26, theme_smg.scss */
+/* line 28, theme_smg.scss */
 body {
   color: #808080;
   background-color: rgba(0, 0, 0, 0.2); }
 
-/* line 32, theme_smg.scss */
+/* line 34, theme_smg.scss */
 .ui-widget-content {
   border: 0;
   background: transparent; }
 
 /*-----------------------------------common start------------------------*/
-/* line 37, theme_smg.scss */
+/* line 39, theme_smg.scss */
 .titleSection {
   text-align: center; }
 
-/* line 41, theme_smg.scss */
+/* line 43, theme_smg.scss */
 .titleSection h2 {
   display: inline-block; }
 
-/* line 45, theme_smg.scss */
+/* line 47, theme_smg.scss */
 .titleSection input {
   line-height: 30px; }
 
